@@ -38,26 +38,49 @@ body {
             height: 378px;
             background-color: #FFFFFF;
             padding: 21px;
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                gap: 15px;
+
+                & li {
+                    position: relative;
+    
+                    & input {
+                        width: 100%;
+                        height: 35.11px;
+                        /* margin-bottom: 15px; */
+                        padding: 8px 10px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        border: 1px solid #000000;
+                        border-radius: 5px;
+                    }
+        
+                    & input.message {
+                        /* margin-bottom: 7px; */
+                        height: 100px;
+                        padding-bottom: 75px;
+                    }
+        
+                    & input::placeholder {
+                        color: #A8A8A8;
+                    }
+        
+                    & .notification {
+                        display: none;
+                        position: absolute;
+                        bottom: -9px;
+                        left: 0;
+                        font-size: 8px;
+                        color: #F52E2E;
+                    }
+                }
+            }
+
             
-            & input {
-                height: 35.11px;
-                margin-bottom: 15px;
-                padding: 8px 10px;
-                font-size: 18px;
-                font-weight: 700;
-                border: 1px solid #000000;
-                border-radius: 5px;
-            }
-
-            & input.message {
-                margin-bottom: 7px;
-                height: 100px;
-                padding-bottom: 75px;
-            }
-
-            & input::placeholder {
-                color: #A8A8A8;
-            }
 
             & .submit {
                 font-size: 18px;
@@ -68,8 +91,24 @@ body {
                 border-radius: 5px;
                 height: 41px;
                 align-content: end;
-                margin-top: 20px;
+                margin-top: 17px;
             }
         }
+    }
+}
+
+.required-field {
+    & input {
+        border-color: #F52E2E;
+    }
+
+    & .notification {
+        display: block;
+    }
+}
+
+.validated-field {
+    & input {
+        border-color: #3CCC87;
     }
 }
