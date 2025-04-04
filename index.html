@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsible.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                 24h.
             </p>
         </div>
-        <form action="index.html" method="post">
+        <form action="/submit" method="POST">
             <ul>
                 <li>
                     <input type="text" id="name" class="name" placeholder="Nome complete *">
@@ -47,9 +48,11 @@
                 </li>
             </ul>
             <span>*campos obrigatórios</span>
-            <button type="submit" class="submit">Enviar</button>
+            <button type="submit" class="submit" id="submit">Enviar</button>
         </form>
     </main>
+
+    <script src="./src/js/form.js"></script>
 </body>
 
 </html>
