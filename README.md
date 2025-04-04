@@ -46,11 +46,13 @@ O projeto utiliza as seguintes tecnologias:
 ## 📂 Estrutura de Pastas
 
 ```
-quest-html-css-js-intermediario/
-│── css/           # Arquivos de estilos (CSS)
-│── js/            # Scripts JavaScript
-│── index.html     # Página principal do projeto
-└── readme.md      # Documentação do projeto
+validation-form/
+│── src/            # Pasta de mídias, estilos e js
+|    |── css/       # Arquivos de estilos (CSS)
+|    |── images/    # Imagens do projeto
+|    |── js/        # Scripts JavaScript
+│── index.html      # Página principal do projeto
+└── readme.md       # Documentação do projeto
 ```
 
 ## 🤝 Contribuição
